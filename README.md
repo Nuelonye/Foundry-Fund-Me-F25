@@ -21,28 +21,16 @@ withdrawing,
 
 ownership restrictions
 
-## 🛠️ Prerequisites
 
-Foundry
-
-Git
-
-Install Foundry if you haven’t already:
+## Quickstart
 
 ```shell
-$ curl -L https://foundry.paradigm.xyz | bash
-$ foundryup
+git clone https://github.com/Nuelonye/Foundry-Fund-Me
+cd Foundry-Fund-Me
+forge build
 ```
 
-### Quickstart
-
-```shell
-$ git clone https://github.com/Nuelonye/Foundry-Fund-Me
-$ cd Foundry-Fund-Me
-$ forge build
-```
-
-### 🧪 Testing
+## 🧪 Testing
 
 Run the full suite:
 ```shell
@@ -54,7 +42,7 @@ Check test coverage:
 forge coverage
 ```
 
-### 📜 Scripts
+## 📜 Scripts
 
 This repo uses Foundry’s Script system for deployments and interactions.
 
@@ -74,7 +62,7 @@ Withdraw From Contract:
 forge script script/FundMeInteractions.s.sol:WithdrawFundMe --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
 ```
 
-### 🌍 Networks
+## 🌍 Networks
 
 You can deploy to any EVM-compatible network.
 Update your .env file with:
@@ -84,9 +72,7 @@ PRIVATE_KEY=your-private-key
 ETHERSCAN_API_KEY=your-etherscan-key
 ```
 
-### 📚 Resources
+## 📚 Resources
 
+Teacher - Patrick Collins
 Cyfrin Updraft
-
-
-
