@@ -72,8 +72,9 @@ PRIVATE_KEY=your-private-key
 ETHERSCAN_API_KEY=your-etherscan-key
 ```
 
+## License
+MIT
+
 ## 📚 Resources
-
 Teacher - Patrick Collins
-
 Cyfrin Updraft
