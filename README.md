@@ -26,7 +26,7 @@ ownership restrictions
 
 ```shell
 git clone https://github.com/Nuelonye/Foundry-Fund-Me
-cd Foundry-Fund-Me
+cd foundry-fund-me
 forge build
 ```
 
@@ -48,9 +48,8 @@ This repo uses Foundry’s Script system for deployments and interactions.
 
 Deploy FundMe:
 ```shell
-forge script script/DeployFundMe.s.sol --rpc-url $RPC_URL --account ACCOUNT_NAME --broadcast
+forge script script/DeployFundMe.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
 ```
-OR --private-key $PRIVATE_KEY
 
 Fund Contract:
 ```shell
@@ -65,6 +64,7 @@ forge script script/FundMeInteractions.s.sol:WithdrawFundMe --rpc-url $RPC_URL -
 ## 🌍 Networks
 
 You can deploy to any EVM-compatible network.
+
 Update your .env file with:
 ```shell
 RPC_URL=https://your-network-rpc
@@ -75,4 +75,5 @@ ETHERSCAN_API_KEY=your-etherscan-key
 ## 📚 Resources
 
 Teacher - Patrick Collins
+
 Cyfrin Updraft
