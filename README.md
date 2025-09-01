@@ -50,6 +50,8 @@ Deploy FundMe:
 ```shell
 forge script script/DeployFundMe.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
 ```
+NOTE: when deploying on anvil comment out ETHERSCAN_API_KEY from .env if you have any
+
 
 Fund Contract:
 ```shell
@@ -60,6 +62,12 @@ Withdraw From Contract:
 ```shell
 forge script script/FundMeInteractions.s.sol:WithdrawFundMe --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
 ```
+
+Deploy And Verify On Sepolia Etherscan
+```shell
+forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --account <account name> --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
+```
+OR  --private-key $SEPOLIA_PRIVATE_KEY IF IT'S NOT encrypted
 
 ## 🌍 Networks
 
@@ -77,4 +85,5 @@ MIT
 
 ## 📚 Resources
 Teacher - Patrick Collins
+
 Cyfrin Updraft
